@@ -1,0 +1,280 @@
+/* --------CSS FOR NAV BAR (Header)-------- */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: #301934;
+  color: white;
+  border-bottom: 3px solid rgb(125, 65, 125);
+  padding-inline: 50px;
+}
+
+.leftNav {
+  display: flex;
+  align-items: center;
+}
+
+.rightNav {
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  font-size: 30px;
+  margin-right: 20px;
+  color: rgb(250, 235, 210);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navLink {
+  color:rgb(250, 235, 210);
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+
+.navLink:hover{
+  color: #b08ab7;  
+}
+
+/* --------CSS FOR HOME PAGE-------- */
+
+.homepage {
+  display: flex;
+  background-color: #301934;
+  color: rgb(250, 235, 210);
+  height: 90vh;
+  padding-inline: 30px;
+}
+
+.hContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  margin-left: 10%;
+}
+
+.hText {
+  font-size: 40px;
+  margin-bottom: 30px;
+  word-spacing: 1%;
+}
+
+.hPara {
+  font-size: 20px;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.hImage {
+  flex: 1;
+  background: url('../public/images/logo.png') center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  margin-right: 30px;
+}
+
+/* --------CSS FOR LOGIN PAGE-------- */
+
+.loginpage {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: #66416d;
+}
+
+.lContainer {
+  background-color: rgba(194, 163, 198, 0.801);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(142, 128, 144, 0.683);
+  padding: 20px;
+  width: 500px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.lContainer h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lContainer .form-group {
+  margin-bottom: 20px;
+}
+
+.lContainer .form-group label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.lContainer .form-group input,
+.lContainer .form-group select {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+.lContainer .login-btn {
+  background-color: #4a2b4f;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+}
+
+.login-btn:hover{
+  cursor: pointer;
+  background-color: #66416d;
+}
+
+.center-text {
+  text-align: center;
+  display: block; 
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.center-text:hover {
+  text-decoration: underline;
+}
+
+/* --------CSS FOR Footer-------- */
+/* 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #301934;
+  color: white;
+  border-top: 3px solid rgb(125, 65, 125);
+  padding-inline: 50px;
+  align-items: center;
+}
+
+.footer .leftFooter {
+  display: flex;
+  align-items: center;
+}
+
+.footer .centerFooter {
+  flex-grow: 1;
+  margin-left: 50%;
+}
+
+.footer .rightFooter {
+  display: flex;
+  align-items: center;
+}
+
+.brandFooter {
+  font-size: 30px;
+  margin-right: 20px;
+  color: rgb(250, 235, 210);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footerLink {
+  color: rgb(250, 235, 210);
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.footerLink:hover {
+  color: #b08ab7;
+}
+
+.socialIcons {
+  display: flex;
+}
+
+.socialIcons a {
+  color: rgb(250, 235, 210);
+  margin-left: 40%;
+  text-decoration: none;
+}
+
+.socialIcons a:hover {
+  color: #b08ab7;
+} */
+
+/* Footer styles */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: #301934;
+  color: white;
+  border-top: 3px solid rgb(125, 65, 125);
+  padding-inline: 50px;
+}
+
+.leftFooter, .centerFooter, .rightFooter {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.brandFooter {
+  font-size: 30px;
+  color: rgb(250, 235, 210);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensures it takes up full width of its container */
+}
+
+.socialIcons a {
+  margin-left: 15px;
+  display: inline-block;
+}
+
+.socialIcon {
+  width: 24px; /* Adjust size as needed */
+  height: 24px;
+  transition: filter 0.3s;
+}
+
+.socialIcons a:hover .socialIcon {
+  filter: brightness(0.8); 
+}
+
+.centerFooter {
+  justify-content: center;
+}
+
+.rightFooter {
+  justify-content: flex-end;
+  color: rgb(250, 235, 210);
+}
