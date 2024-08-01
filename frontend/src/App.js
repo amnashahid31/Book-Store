@@ -5,6 +5,7 @@ import Details from './components/bookDetails';
 import Login from './components/login';
 import Footer from './components/footer';
 import Main from './components/dashboard';
+import AddUser from './components/user';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Route path='/books' element={<Details/>}></Route>
         <Route path='/login' element={<Login/>}></Route>
         <Route path='/main' element={<Main/>}></Route>
-
+        <Route path='/add-user' element={<AddUser />}></Route> 
       </Routes>
       <Footer />
     </BrowserRouter>

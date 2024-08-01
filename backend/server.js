@@ -3,7 +3,7 @@ const dotenv = require('dotenv');
 const cors = require('cors');
 require('./database');
 const { AdminRouter } = require('./routes/auth');
-
+const { UserRouter } = require('./routes/users');
 dotenv.config(); 
 
 const PORT = process.env.PORT || 3001;
@@ -13,6 +13,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use('/auth', AdminRouter);
+app.use('/user', UserRouter);
 
 app.listen(PORT, () => {
   console.log("Server is Running on PORT 3001");
